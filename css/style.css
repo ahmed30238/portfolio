@@ -214,6 +214,7 @@ header .icons a div{
     padding: 40px 20px ;
     box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    height: 300px;
 
 }
 .services .item .icon{
@@ -236,6 +237,7 @@ header .icons a div{
 .services .item p{
     font-size: 14px;
     word-spacing: 2px;
+    overflow-y: auto;
     color: rgb(116, 129, 130);
 }
 .services .item:hover .icon{
@@ -269,15 +271,16 @@ header .icons a div{
     transform: translateY(-20px);
     transition: all .5s;
 }
-.works-icons  a div i{
+.works-icons   div i{
     width: 30px;
     height: 30px;
     line-height: 28px;
+    margin-right: 10px;
     border-radius: 50%;
     border: 1px solid #111;
     background: #111;
     color: #eee;
-    transform: translateY(15px);
+    /* transform: translateY(15px); */
     transition: all .5s;
 }
 .works .image:hover .image-content{
@@ -294,37 +297,32 @@ header .icons a div{
     background: #eee;
     color: #111;
 }
-.works .nav-item{
-    margin-right: 20px;
-    position: relative;
-    margin: 0 15px;
-}
-.works .nav-link{
-    color: #222;
-    font-size: 16px;
-    font-weight: 700;
-}
-.works .nav-item .active{
-    color: #222 !important;
-    background-color: transparent;
-}
-.works .nav-pills li > button{
-    width: 100%;
-    padding: 0;
-}
-.works .nav-pills li > button::after{
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color: #222;
+.google-play-links{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 200px;
+    height: 100px;
     position: absolute;
-    bottom: -5px;
-    left:0;
+    top: 50px;
+    opacity: 0;
     transition: all .5s;
 }
-.works .nav-pills > li .active::after{
-    width: 95%;
+.icon:hover{
+    
 }
+.google-play-links a{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.google-play:hover .google-play-links{
+    opacity: 1;
+    
+}
+.google-play-links a:hover{
+    color: #748182;
+}
+
 /* end of works */
 /* start of clients */
 .clients-content img{

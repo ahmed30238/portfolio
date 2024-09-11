@@ -15,27 +15,27 @@ var ItemsHagat = [
   {
     Name:'Mobile App Development',
     desc:'iOS and Android Apps: Developing cross-platform mobile apps for both iOS and Android from a single codebase.<br>Custom App Development: Creating custom features and functionalities as per client requirements. \n UI/UX Design Implementation: Translating design into functional and responsive UI using Flutter’s customizable widgets.\n',
-    icon:'fa-brands fa-flutter',
+    icon:'fa-solid fa-mobile-screen',
   },
   {
     Name:'API Integration',
     desc:'Backend Services: Connecting the app with backend services, APIs, and databases to enable dynamic functionality.<br>Third-Party SDK Integration: Implementing third-party SDKs (e.g., Firebase, payment gateways, social logins).',
-    icon:'fa-brands fa-dart-lang',
+    icon:'fa-solid fa-server',
   },
   {
     Name:'App Maintenance and Support',
     desc:'Bug Fixes and Updates: Providing ongoing maintenance, fixing bugs, and ensuring compatibility with new OS updates.<br>Performance Optimization: Improving app performance, reducing load times, and optimizing for better user experience.',
-    icon:'fa-phone',
+    icon:'fa-solid fa-bug-slash',
   },
   {
     Name:' Deployment and App Store Submission',
     desc:'App Store and Google Play Submission: Packaging and deploying apps to Google Play and the Apple App Store.<br>CI/CD Implementation: Setting up Continuous Integration/Continuous Delivery pipelines for automatic testing and deployment.',
-    icon:'fa-phone',
+    icon:'fa-brands fa-google-play',
   },
   {
     Name:'Consulting and Code Review',
     desc:'Consultation: Providing expert advice on Flutter app architecture, performance, and best practices.<br>Code Reviews: Auditing existing Flutter codebases for improvements in structure, performance, and maintainability.',
-    icon:'fa-phone',
+    icon:'fa-solid fa-code',
   },
   // {
   //   Name:'Flutter',
