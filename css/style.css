@@ -211,44 +211,26 @@ header .icons a div{
     z-index: -1;
 }
 .services .item{
-    padding: 40px 20px ;
+    padding: 30px 10px ;
     box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    height: 300px;
 
 }
-.services .item .icon{
-    font-size: 30px;
-    margin-bottom: 20px;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    background-color: #f4f4f4;
-    border-radius: 50%;
-    transition: all .5s;
-}
-.services .item h6{
-    font-size: 18px;
-    font-weight: 800;
-    margin-bottom: 15px;
-    color: rgb(52, 52, 52);
-    font-family: "Montserrat", sans-serif;
-}
-.services .item p{
+.services .item .li{
     font-size: 14px;
-    word-spacing: 2px;
-    overflow-y: auto;
-    color: rgb(116, 129, 130);
 }
-.services .item:hover .icon{
-    background-color: #1c1c1c;
+.services .item h5{
+    margin-top: 5px;
 }
-.services .item:hover .icon i{
-    color: #eee;
+.services .item ul{
+    padding: 2px;
+}
+.services .item .col-md-3{
+    border: 2px solid #dedddd;
+    border-radius: 5px;
 }
 /* end of services */
 /* start of works */
-
 .works .image-content{
     position: absolute;
     top: 5px;
@@ -283,6 +265,10 @@ header .icons a div{
     /* transform: translateY(15px); */
     transition: all .5s;
 }
+.iconBdan{
+    position: absolute;
+    left: 185px;
+}
 .works .image:hover .image-content{
     opacity: 1;
     transform: translateY(0);
@@ -308,9 +294,7 @@ header .icons a div{
     opacity: 0;
     transition: all .5s;
 }
-.icon:hover{
-    
-}
+
 .google-play-links a{
     text-decoration: none;
     color: #1c1c1c;

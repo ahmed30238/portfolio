@@ -1,52 +1,21 @@
-// start of typer
-// var typed = new Typed('#element', {
-//     strings: ['Ahmed ELsyaad','Devoloper','Designer'],
-//     typeSpeed: 50,
-//     backSpeed:25,
-//     backDelay:500,
-//     startDelay:500,
-//     loop:true,
-//     // fadeOut: true,
-//     cursorBlinking: true
-//     });
-// end of typer
-var container = ``
-var ItemsHagat = [
-  {
-    Name:'Mobile App Development',
-    desc:'iOS and Android Apps: Developing cross-platform mobile apps for both iOS and Android from a single codebase.<br>Custom App Development: Creating custom features and functionalities as per client requirements. \n UI/UX Design Implementation: Translating design into functional and responsive UI using Flutter’s customizable widgets.\n',
-    icon:'fa-solid fa-mobile-screen',
-  },
-  {
-    Name:'API Integration',
-    desc:'Backend Services: Connecting the app with backend services, APIs, and databases to enable dynamic functionality.<br>Third-Party SDK Integration: Implementing third-party SDKs (e.g., Firebase, payment gateways, social logins).',
-    icon:'fa-solid fa-server',
-  },
-  {
-    Name:'App Maintenance and Support',
-    desc:'Bug Fixes and Updates: Providing ongoing maintenance, fixing bugs, and ensuring compatibility with new OS updates.<br>Performance Optimization: Improving app performance, reducing load times, and optimizing for better user experience.',
-    icon:'fa-solid fa-bug-slash',
-  },
-  {
-    Name:' Deployment and App Store Submission',
-    desc:'App Store and Google Play Submission: Packaging and deploying apps to Google Play and the Apple App Store.<br>CI/CD Implementation: Setting up Continuous Integration/Continuous Delivery pipelines for automatic testing and deployment.',
-    icon:'fa-brands fa-google-play',
-  },
-  {
-    Name:'Consulting and Code Review',
-    desc:'Consultation: Providing expert advice on Flutter app architecture, performance, and best practices.<br>Code Reviews: Auditing existing Flutter codebases for improvements in structure, performance, and maintainability.',
-    icon:'fa-solid fa-code',
-  },
-  // {
-  //   Name:'Flutter',
-  //   desc:'lorem',
-  //   icon:'fa-phone',
-  // },
-]
-for (let index = 0; index < ItemsHagat.length; index++) {
-  container+='<div class="col-lg-4"><div class="item bg-white d-flex flex-column justify-content-center align-items-center"><div class="icon"><i class="fa '+ItemsHagat[index].icon+'"></i></div><h6>'+ItemsHagat[index].Name+'</h6><p>'+ItemsHagat[index].desc+'</p></div></div>'
 
-}
+// var container = ``
+// let software=['SDLC','software Design',"OOP","SOLID principles","Design Patterns","Mobile Aplication Development"];
+// let Api=['Postman','RESTful API',"Json","Token-based authentication","Dio","Dio Interceptors"];
+// let Dev =["Git","GitHub","CI/CD"]
+// let localStorage =["SQLite","Shared preferences","Get Storage"];
+// let Approoaches = ["Clean Architecture","MVC","MVVM"];
+// let flutter =["Debugging","Responsive Design","Adaptive Design","Internationalization","Theming","Location","Google Maps","Isolates"];
+// let flutterState=["BloC (primary)","GetX","Riverpod"]
+// let lang=["Dart","Flutter Framework","PHP","Python","Java"]
+// let pay =["Stripe"]
+// let fire=["Firebase Authentication","Cloud Storage","CLoud Messaging"]
+
+// let skill = `<li class="alert alert-info"></li>`
+// for (let index = 0; index < ItemsHagat.length; index++) {
+//   container+='<div class="col-lg-4"><div class="item bg-white d-flex flex-column justify-content-center align-items-center"><div class="icon"><i class="fa '+ItemsHagat[index].icon+'"></i></div><h6>'+ItemsHagat[index].Name+'</h6><p>'+ItemsHagat[index].desc+'</p></div></div>'
+
+// }
 
 console.log(container);
 
@@ -62,52 +31,8 @@ document.addEventListener('scroll',() =>{
     }
 })    
 // end of navbar
-// start of progress
 
-let progress = document.querySelectorAll('.progress div');
 
-window.onscroll = function(){
-    if (window.scrollY >= section.offsetTop - 200){
-        progress.forEach((div) =>{
-            div.style.width = div.dataset.width
-        })
-        
-    }
-}
-// end of progress
-// start of counter
-var counted = 0;
-$(window).scroll(function() {
-
-  var oTop = $('#counter').offset().top - 400;
-  if (counted == 0 && $(window).scrollTop() > oTop) {
-    $('.count').each(function() {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-      $({
-        countNum: $this.text()
-      }).animate({
-          countNum: countTo
-        },
-
-        {
-
-          duration: 2000,
-          easing: 'swing',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-            $this.text(this.countNum);
-          }
-
-        });
-    });
-    counted = 1;
-  }
-
-});
-// end of counter
 
 // start custom typedjs 
 jQuery(document).ready(function($) {
